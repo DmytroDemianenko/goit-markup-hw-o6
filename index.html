@@ -70,24 +70,39 @@
                                 <form  class="form">
                                 <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
                                 <div class="form-field">
-                                <label for="user-name">Имя</label>
-                                <input type="text" name="name" id="user-name" autofocus/>
+                                    <span class="field-icon">
+                                        <svg class="form-icon" width="12" height="12">
+                                            <use href="./images/icons.svg#user-form"></use>
+                                        </svg>
+                                    </span>
+                                    <input class="form-input" type="text" name="name" id="user-name" autofocus placeholder=" "/>
+                                    <label class="form-label" for="user-name">Имя</label>
                                 </div>
                                 <div class="form-field">
-                                <label for="tel">Телефон</label>
-                                <input type="tel" name="tel" id="tel">
+                                    <span class="field-icon">
+                                        <svg class="form-icon" width="12" height="12">
+                                            <use href="./images/icons.svg#phone-form"></use>
+                                        </svg>
+                                    </span>
+                                    <input class="form-input" type="tel" name="tel" id="tel">
+                                    <label class="form-label" for="tel">Телефон</label>
                                 </div>
                                 <div class="form-field">
-                                <label for="email">Почта</label>
-                                <input type="email" name="email" id="email">
+                                    <span class="field-icon">
+                                        <svg class="form-icon" width="12" height="12">
+                                            <use href="./images/icons.svg#email-form"></use>
+                                        </svg>
+                                    </span>
+                                    <input class="form-input" type="email" name="email" id="email">
+                                    <label class="form-label" for="email">Почта</label>
                                 </div>
                                 <div class="form-field">
-                                <label for="feedback">Комментарий</label>
-                                <textarea name="feedback" id="feedback" rows="5" placeholder="Введите текст"></textarea>
+                                <textarea class="form-input-textarea" name="feedback" id="feedback" rows="5" placeholder="Введите текст"></textarea>
+                                <label class="form-label-textarea" for="feedback">Комментарий</label>
                                 </div>
                                 <div class="form-field">
-                                <input type="checkbox" name="" id="agree">
-                                <label for="agree">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                                <input  class="check" type="checkbox" name="check" id="agree">
+                                <label class="check-label" for="agree">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
                                 </div>
                                 <button class="button" type="submit">Отправить</button>
                                 
