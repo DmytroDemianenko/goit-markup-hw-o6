@@ -555,6 +555,13 @@ img {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
+.products-card {
+  display: inline-block;
+  box-shadow: none;
+  border: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .card-title {
   font-size: 18px;
 }
@@ -572,14 +579,10 @@ img {
   border-left: 1px solid var(--card-content-bc);
 }
 .products-list-item {
-  box-shadow: none;
-  border: none;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.products-list-item:hover,
-.products-list-item:focus {
+.products-card:hover,
+.products-card:focus {
   background-color: #ffffff;
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -611,10 +614,10 @@ img {
   color: var(--white-color);
   padding: 63px 24px;
 }
-.products-list-item:hover .products-overlay,
-.products-list-item:focus .products-overlay {
-  transform: translateY(0);
+.products-card:hover .products-overlay,
+.products-card:focus .products-overlay {
   opacity: 1;
+  transform: translateY(0);
 }
 /* PORTFOLIO BUTTON */
 .button-list {
