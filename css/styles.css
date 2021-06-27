@@ -746,3 +746,25 @@ img {
 .social-connect-link:focus {
   background-color: var(--active-color);
 }
+/* practic */
+.option {
+  display: block;
+  margin-bottom: 0.25em;
+}
+.check {
+  padding-left: 1.2em;
+}
+.check__input {
+  position: absolute;
+  -webkit-apperance: none;
+  -moz-apperance: none;
+  appearance: none;
+}
+.check__box {
+  position: absolute;
+  margin-left: -1.2em;
+  width: 1em;
+  height: 1em;
+  /* background-color: red; */
+  background-image: url(images/icons.svg#twitter);
+}
