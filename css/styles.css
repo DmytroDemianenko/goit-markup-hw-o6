@@ -384,28 +384,41 @@ img {
 }
 .form-icon {
   fill: currentColor;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.check-label {
-  display: flex;
+.option {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
+.check {
+  padding-left: 36px;
+}
+.check-input {
   position: absolute;
-  top: -4px;
-  left: 0px;
-  /* left: 24px; */
-  padding-left: 12px;
-  display: inline-block;
-  /* transform: translateY(-22px); */
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-.checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-.check-border {
-  display: inline-block;
+.check-box {
   position: absolute;
-  top: 3px;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  top: 4px;
   left: 0;
+  margin-left: 12px;
+  background-image: url("../images/Vector.svg");
+}
+
+.check-input:checked + .check-box {
+  border-radius: 2px;
+  background-color: var(--button-background-active);
+  background-size: contain;
+  background-image: url("../images/check.svg");
 }
 .license-link {
   color: var(--active-color);
@@ -853,25 +866,59 @@ img {
 .social-connect-link:focus {
   background-color: var(--active-color);
 }
-/* practic */
-.option {
-  display: block;
-  margin-bottom: 0.25em;
+/* SUBSCRIBE */
+.subscribe {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 93px;
 }
-.check {
-  padding-left: 1.2em;
+.subscribe-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  text-align: center;
+  text-transform: uppercase;
 }
-.check__input {
+.subscribe-field {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+.subscribe-input {
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.25em;
+  letter-spacing: 0.03em;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--back-dark);
+}
+.subscribe-button {
   position: absolute;
-  -webkit-apperance: none;
-  -moz-apperance: none;
-  appearance: none;
+  top: 36px;
+  left: 370px;
+  width: 200px;
+  height: 50px;
+  color: var(--white-color);
+  background-color: var(--button-background-active);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
 }
-.check__box {
+.send {
   position: absolute;
-  margin-left: -1.2em;
-  width: 1em;
-  height: 1em;
-  background-color: red;
-  /* background-image: url(images/symbol.svg#check); */
+  top: 5px;
 }

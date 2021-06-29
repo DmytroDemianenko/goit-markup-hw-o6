@@ -100,16 +100,13 @@
                                 <textarea class="form-input-textarea" name="feedback" id="feedback" rows="5" placeholder="Введите текст"></textarea>
                                 <label class="form-label-textarea" for="feedback">Комментарий</label>
                                 </div>
-                                <div class="form-field">
-                                <label class="check-label">
-                                    <input class="checkbox" type="checkbox" name="check">
-                                    <svg class="check-border" width="16" height="15">
-                                        <use href="./images/icons.svg#check-border"></use>
-                                    </svg>Соглашаюсь с рассылкой и принимаю <a class="license-link" href="">Условия договора</a></label>
-                                </div>
-                                <button class="submit-bth" type="submit">Отправить</button>
                                 
-                            </form>
+                                <label class="check option">
+                                    <input class="check-input" type="checkbox" name="check" required="">
+                                    <span class="check-box"> </span>Соглашаюсь с рассылкой и принимаю <a class="license-link" href=""> Условия договора</a></label>
+                                
+                                <button class="submit-bth" type="submit">Отправить</button>
+                                </form>
                             </div>
                         </div>
                 </div>
@@ -449,7 +446,7 @@
             </address>
             </div>
             <div class="connect">
-                <h2 class="connect-title">присоединяйтесь</h2>
+                <h3 class="connect-title">присоединяйтесь</h3>
                 <ul class="social-connect-list">
                     <li class="social-connect-item">
                         <a class="social-connect-link" href="">
@@ -481,32 +478,19 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscribe">
+                <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+                <label class="subscribe-field">
+                    <input class="subscribe-input" type="text" placeholder="E-mail">
+                </label>
+                <button class="subscribe-button" type="submit">Подписаться<svg class="send" width="24px" height="24px"><use href="../images/icons.svg#send"></use></svg></button>
+            </div>
         </div>
         
     </footer>
 <!-- Скрипт на модалку -->
     <script src="./js/modal.js"></script>
-    <!-- Practic -->
-    <label class="check option">
-        <input class="check__input" type="checkbox">
-        <span class="check__box">
-            <!-- <svg>
-            <use href="./images/icons.svg#check"></use>
-        </svg> -->
-        </span> First
-    </label>
-    <label class="check option">
-        <input class="check__input" type="checkbox" checked>
-        <span class="check__box"></span> Second
-    </label>
-    <label class="check option">
-        <input class="check__input" type="checkbox" disabled>
-        <span class="check__box"></span> Third
-    </label>
-    <label class="check option">
-        <input class="check__input" type="checkbox" checked disabled>
-        <span class="check__box"></span> Fourth
-    </label>
+    
 </body>
     
 </html>

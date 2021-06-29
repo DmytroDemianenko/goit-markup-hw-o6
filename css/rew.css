@@ -1,0 +1,42 @@
+rew.css .check-label {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-left: 36px;
+}
+.check-input {
+  position: absolute;
+  margin-left: 12px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.check-box {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  /* width: 15px;
+  height: 16px; */
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-left: 12px;
+
+  border-radius: 2px;
+
+  background: url("../images/icons.svg#check-border");
+  /* background-color: red; */
+}
+.check-input:checked ~ .check-box {
+  background-image: url("../images/icons.svg#checked");
+  background-color: var(--active-color);
+  background-size: contain;
+  background-origin: border-box;
+  /* border: 2px solid var(--active-color); */
+  opacity: 1;
+}
