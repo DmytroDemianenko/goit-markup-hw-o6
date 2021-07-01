@@ -440,7 +440,7 @@ img {
   padding: 10px 55px;
   cursor: pointer;
   border: none;
-  
+
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -826,7 +826,7 @@ img {
   color: var(--white-color);
 }
 .foot-id {
-  padding-right: 16px;
+  width: 231px;
 }
 /* CONNECT */
 .connect-title {
@@ -874,31 +874,35 @@ img {
 /* SUBSCRIBE */
 .form-subscribe {
   position: relative;
+  display: flex;
 }
 .subscribe {
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
+  /* display: flex; */
+  align-items: baseline;
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* flex-direction: row; */
   align-items: baseline;
   margin-left: 93px;
 }
 .subscribe-title {
+  /* display: flex; */
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.03em;
   color: var(--white-color);
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .subscribe-field {
-  display: flex;
+  /* display: flex; */
   text-align: center;
   justify-content: center;
   width: 358px;
   height: 50px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   border: none;
 }
 .subscribe-input {
@@ -915,12 +919,12 @@ img {
   background-color: var(--back-dark);
 }
 .subscribe-button {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 36px;
-  left: 370px;
+  /* top: 36px;
+  left: 370px; */
   width: 200px;
   height: 50px;
   color: var(--white-color);
@@ -929,16 +933,19 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  margin-right: 0;
+  margin-left: 12px;
 }
 .send {
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 .button-label {
   display: flex;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
   align-items: center;
 }
