@@ -181,8 +181,7 @@ img {
   background-position: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200;
-  padding-bottom: 200;
+  padding: 0;
 }
 .hero {
   display: flex;
@@ -190,9 +189,6 @@ img {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-top: 200;
-  padding-bottom: 200;
-  z-index: 2;
 }
 .main-title {
   color: var(--white-color);
@@ -264,7 +260,6 @@ img {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close {
   position: absolute;
@@ -280,11 +275,15 @@ img {
 
 .close-icon {
   position: absolute;
+  opacity: 1;
   transform: translate(-50%, -50%);
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-icon:hover {
+  fill: var(--active-color);
+}
+.close:focus-within .close-icon {
   fill: var(--active-color);
 }
 .modal {
@@ -302,7 +301,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  z-index: 3;
+  z-index: 5100;
 }
 /* Form */
 .form {
@@ -826,6 +825,9 @@ img {
 .logo-item-foot {
   color: var(--white-color);
 }
+.foot-id {
+  padding-right: 16px;
+}
 /* CONNECT */
 .connect-title {
   font-weight: 700;
@@ -870,6 +872,9 @@ img {
   background-color: var(--active-color);
 }
 /* SUBSCRIBE */
+.form-subscribe {
+  position: relative;
+}
 .subscribe {
   position: relative;
   display: flex;
@@ -885,7 +890,6 @@ img {
   line-height: 1.14em;
   letter-spacing: 0.03em;
   color: var(--white-color);
-  text-align: center;
   text-transform: uppercase;
 }
 .subscribe-field {
@@ -895,8 +899,7 @@ img {
   width: 358px;
   height: 50px;
   margin-top: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
+  border: none;
 }
 .subscribe-input {
   display: inline-block;
@@ -906,6 +909,8 @@ img {
   line-height: 1.25em;
   letter-spacing: 0.03em;
   padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--back-dark);
 }
@@ -920,6 +925,7 @@ img {
   height: 50px;
   color: var(--white-color);
   background-color: var(--button-background-active);
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
@@ -928,10 +934,11 @@ img {
   display: flex;
   align-items: center;
   padding-left: 10px;
-  /* position: absolute;
-  top: 11px; */
 }
 .button-label {
   display: flex;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
   align-items: center;
 }

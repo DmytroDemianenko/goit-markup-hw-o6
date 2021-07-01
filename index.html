@@ -60,55 +60,7 @@
                 <!-- </div> -->
                 <div class="hero-button">
                     <button class="button-order" data-modal-open type="button">Заказать услугу</button>
-                        <div class="backdrop is-hidden" data-modal>
-                            <div class="modal">
-                                <button class="close" data-modal-close>
-                                        <svg class="close-icon" width="18" height="18">
-                                            <use href="./images/icons.svg#close"></use>
-                                        </svg>
-                                </button>
-                                <form  class="form" autocomplete="off">
-                                <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-                                <div class="form-field">
-                                    <input class="form-input" type="text" name="name" id="user-name" autofocus placeholder=" " autocomplete="off"/>
-                                    <label class="form-label" for="user-name">Имя</label>
-                                    <span class="field-icon">
-                                        <svg class="form-icon" width="18" height="18">
-                                            <use href="./images/icons.svg#user-form"></use>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="form-field">
-                                    <input class="form-input" type="tel" name="tel" id="tel" autocomplete="off">
-                                    <label class="form-label" for="tel">Телефон</label>
-                                    <span class="field-icon">
-                                        <svg class="form-icon" width="18" height="18">
-                                            <use href="./images/icons.svg#phone-form"></use>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="form-field">
-                                    <input class="form-input" type="email" name="email" id="email" autocomplete="off">
-                                    <label class="form-label" for="email">Почта</label>
-                                    <span class="field-icon">
-                                        <svg class="form-icon" width="18" height="18">
-                                            <use href="./images/icons.svg#email-form"></use>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="form-field">
-                                <textarea class="form-input-textarea" name="feedback" id="feedback" rows="5" placeholder="Введите текст"></textarea>
-                                <label class="form-label-textarea" for="feedback">Комментарий</label>
-                                </div>
-                                
-                                <label class="check option">
-                                    <input class="check-input" type="checkbox" name="check" required="">
-                                    <span class="check-box"> </span>Соглашаюсь с рассылкой и принимаю <a class="license-link" href=""> Условия договора</a></label>
-                                
-                                <button class="submit-bth" type="submit">Отправить</button>
-                                </form>
-                            </div>
-                        </div>
+                        
                 </div>
             </div>
         </section>
@@ -446,7 +398,7 @@
             </address>
             </div>
             <div class="connect">
-                <h3 class="connect-title">присоединяйтесь</h3>
+                <p class="connect-title">присоединяйтесь</p>
                 <ul class="social-connect-list">
                     <li class="social-connect-item">
                         <a class="social-connect-link" href="">
@@ -479,16 +431,70 @@
                 </ul>
             </div>
             <div class="subscribe">
-                <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+                <form class="form-subscribe" autocomplete="off">
+                <p class="subscribe-title">Подпишитесь на рассылку</p>
                 <label class="subscribe-field">
                     <input class="subscribe-input" type="text" placeholder="E-mail">
                 </label>
                 <button class="subscribe-button" type="submit"><span class="button-label">Подписаться</span>
                     <svg class="send" width="24px" height="24px"><use href="../images/icons.svg#send"></use></svg></button>
+                </form>
             </div>
         </div>
         
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close" data-modal-close>
+                <svg class="close-icon" width="18" height="18">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+            <form class="form" autocomplete="off">
+                <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+                <div class="form-field">
+                    <input class="form-input" type="text" name="name" id="user-name" autofocus placeholder=" "
+                        autocomplete="off" />
+                    <label class="form-label" for="user-name">Имя</label>
+                    <span class="field-icon">
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/icons.svg#user-form"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="form-field">
+                    <input class="form-input" type="tel" name="tel" id="tel" autocomplete="off">
+                    <label class="form-label" for="tel">Телефон</label>
+                    <span class="field-icon">
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/icons.svg#phone-form"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="form-field">
+                    <input class="form-input" type="email" name="email" id="email" autocomplete="off">
+                    <label class="form-label" for="email">Почта</label>
+                    <span class="field-icon">
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/icons.svg#email-form"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="form-field">
+                    <textarea class="form-input-textarea" name="feedback" id="feedback" rows="5"
+                        placeholder="Введите текст"></textarea>
+                    <label class="form-label-textarea" for="feedback">Комментарий</label>
+                </div>
+    
+                <label class="check option">
+                    <input class="check-input" type="checkbox" name="check" required="">
+                    <span class="check-box"> </span>Соглашаюсь с рассылкой и принимаю <a class="license-link" href="">
+                        Условия договора</a></label>
+    
+                <button class="submit-bth" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 <!-- Скрипт на модалку -->
     <script src="./js/modal.js"></script>
     
